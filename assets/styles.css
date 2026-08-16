@@ -1,0 +1,45 @@
+:root{
+  --accent:#2b6ef6;
+  --muted:#666;
+  --bg:#f6f8fb;
+  --card:#fff;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  margin:0;
+  background:var(--bg);
+  color:#111;
+}
+.app-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 20px;
+  background:linear-gradient(90deg,#0b63d6,#2b6ef6);
+  color:#fff;
+}
+.app-name{font-weight:700;font-size:1.1rem}
+.user-area{display:flex;align-items:center;gap:10px}
+.container{max-width:1100px;margin:20px auto;padding:0 16px}
+.nav{display:flex;gap:8px;margin-bottom:12px}
+.tab-btn{padding:8px 14px;border-radius:6px;border:1px solid rgba(0,0,0,0.06);background:transparent;cursor:pointer}
+.tab-btn.active{background:#fff;color:var(--accent);box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.view{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 1px 6px rgba(25,25,25,0.04)}
+.hidden{display:none}
+.login-form{display:flex;gap:8px;max-width:420px}
+.login-form input{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.login-form button{padding:8px 12px;border-radius:6px;background:var(--accent);color:#fff;border:none}
+.hint{color:var(--muted);font-size:0.9rem}
+.charts{display:flex;gap:16px;flex-wrap:wrap}
+.chart-card{flex:1;min-width:300px;padding:12px;background:var(--bg);border-radius:6px}
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th,.table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.pagination{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}
+.pagination button{padding:6px 10px;border-radius:6px;border:1px solid #ddd;background:#fff}
+.products-controls{display:flex;justify-content:flex-end;margin-bottom:6px}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.35);z-index:50}
+.modal-content{background:#fff;padding:16px;border-radius:8px;min-width:320px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+.btn-link{background:none;border:none;color:var(--accent);cursor:pointer}
+.user-chip{background:rgba(255,255,255,0.15);padding:6px 10px;border-radius:20px}
